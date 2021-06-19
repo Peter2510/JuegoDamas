@@ -17,6 +17,7 @@ public class Principal {
     }
 
     private VectorUsuarios controlUsuarios = new VectorUsuarios();
+    private PiedraPapelTijera suerte = new PiedraPapelTijera();
 
     public Principal() {
 
@@ -63,6 +64,8 @@ public class Principal {
                 else{
 
                     System.out.println("No hay usuarios registrados");
+                    suerte.generarnumero();
+                    System.out.println(suerte.getAleatorio());
                 }
                 
             }
