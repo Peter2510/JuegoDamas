@@ -6,7 +6,7 @@ import src.logica.Principal;
 
 public class VectorUsuarios {
 
-    private Usuarios[] usuario = new Usuarios[9];
+    private Usuarios[] usuario = new Usuarios[10];
     private int contadorUsuarios;
     Scanner Scanner = new Scanner(System.in);
 
@@ -21,7 +21,7 @@ public class VectorUsuarios {
 
 
     public void agregarUsuario(String nombre){
-        if (contadorUsuarios > 10){
+        if (contadorUsuarios > 9){
             System.out.println("Límite de usuarios alcanzados");
         }
         else{
@@ -35,7 +35,7 @@ public class VectorUsuarios {
 
 
     public void agregarUsuario(){
-        System.out.print("Ingrese el nombre del  usuario: ");
+        System.out.println("Ingrese el nombre del  usuario: ");
         String nombre = Scanner.nextLine();
         agregarUsuario(nombre);
     }

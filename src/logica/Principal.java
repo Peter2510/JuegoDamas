@@ -2,12 +2,12 @@ package src.logica;
 
 import src.usuarios.VectorUsuarios;
 import java.util.Scanner;
-import src.tablero.Tablero;
+//import src.tablero.Tablero;
 
 public class Principal {
 
     Scanner ingreso = new Scanner(System.in);
-    Tablero tablero = new Tablero();
+    //Tablero tablero = new Tablero();
 
     public static void main(String[] args) {
 
@@ -30,19 +30,19 @@ public class Principal {
             System.out.println("2. Mostrar reporte de usuarios");
             System.out.println("3. Iniciar Partida");
             System.out.println("4. Salir");
-            System.out.print("\nIngresa una opcion: ");  
+            System.out.println("\nIngresa una opcion: ");  
             menu = ingreso.nextInt();
 
             if (menu == 1) {
 
-                if (controlUsuarios.getContadorUsuarios()>4) {
+                if (controlUsuarios.getContadorUsuarios()>9) {
                     
                     System.out.println("\nSe alcanzo el maximo de jugadores permitidos");
                 }
 
                 else {
 
-                    System.out.println("\n***  Registrando Usuario ***\n");
+                    System.out.println("\n***  Registrando Usuario ***");
                     controlUsuarios.agregarUsuario();
                     
                 }
@@ -55,7 +55,7 @@ public class Principal {
                 System.out.println("\n***  Reporte de usuarios   ***\n");
 
 
-                if (controlUsuarios.getContadorUsuarios()>1) {
+                if (controlUsuarios.getContadorUsuarios()>0) {
                     
                     controlUsuarios.mostrarUsuariosRegistrados();    
                 }
