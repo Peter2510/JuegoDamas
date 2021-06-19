@@ -33,7 +33,6 @@ public class VectorUsuarios {
 
 
 
-
     public void agregarUsuario(){
         System.out.println("Ingrese el nombre del  usuario: ");
         String nombre = Scanner.nextLine();
