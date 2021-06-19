@@ -85,7 +85,7 @@ public class Principal {
                     int opcionJugadores2 = ingreso.nextInt();
                     
                     System.out.println("\n");
-                    tablero.pintarTablero();
+                    
 
                 }
 
