@@ -89,17 +89,39 @@ public class Principal {
 
                     // INICIO Piedra, papel o tijera 
 
+                     while(suerte.getAccion()==0){
+
                     suerte.logica();
                     suerte.getResultado();  
                     System.out.println(suerte.getAccion());
 
-                    // INICIO Piedra, papel o tijera
+                    if (suerte.getAccion()==0) {
 
-                    if (suerte.getAccion()==1) {
-
-                             System.out.println("Inicia el jugador 1 seleccinado");
+                        System.out.println("Empate, se realizara otro intento");
                         
                     }
+
+                      if (suerte.getAccion()==1) {
+
+                        System.out.println("El jugador uno empieza la partida");
+                        
+                    }
+
+
+                      if (suerte.getAccion()==2) {
+
+                        System.out.println("El jugador dos empieza la partida");
+                        
+                    }
+
+
+
+                    }
+
+
+                    // FIN Piedra, papel o tijera
+
+                    
 
 
                     System.out.println("\n");

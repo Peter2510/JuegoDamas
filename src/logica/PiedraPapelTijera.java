@@ -146,12 +146,12 @@ public class PiedraPapelTijera{
 	}
 
 
-     public int getResultado(){ 
-        return accion;
+     public String getResultado(){ 
+        return resultado;
     }
 
-    public String getAccion(){
-    	return resultado;
+    public int getAccion(){
+    	return accion;
     }
 
 
