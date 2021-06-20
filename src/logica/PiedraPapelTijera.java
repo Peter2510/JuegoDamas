@@ -32,9 +32,6 @@ public class PiedraPapelTijera{
 		numeroAleatorio1 = (int) (Math.random() * 3) + 1;
 		numeroAleatorio2 = (int) (Math.random() * 3) + 1;
 
-		System.out.println("uno "+numeroAleatorio1);
-		System.out.println("dos "+numeroAleatorio2);
-		
 
 
 

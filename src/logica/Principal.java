@@ -89,20 +89,36 @@ public class Principal {
 
                     // INICIO Piedra, papel o tijera 
 
-                     while(suerte.getAccion()==0){
 
                     suerte.logica();
-                    suerte.getResultado();  
-                    System.out.println(suerte.getAccion());
+                    suerte.getAccion();  
+                    System.out.println(suerte.getResultado());
+
+                     if(suerte.getAccion()==0){
+                    suerte.logica();
+                    System.out.println("\n");
+                    suerte.getAccion();  
+                    System.out.println(suerte.getResultado());
+                    System.out.println("\n");
+                    tablero.pintarTablero();
+
+                     }
+
+                     else{
+
+                         
+
 
                     if (suerte.getAccion()==0) {
 
+                        System.out.println("\n");
                         System.out.println("Empate, se realizara otro intento");
                         
                     }
 
                       if (suerte.getAccion()==1) {
 
+                        System.out.println("\n");
                         System.out.println("El jugador uno empieza la partida");
                         
                     }
@@ -110,13 +126,14 @@ public class Principal {
 
                       if (suerte.getAccion()==2) {
 
+                        System.out.println("\n");
                         System.out.println("El jugador dos empieza la partida");
                         
                     }
 
 
 
-                    }
+                    
 
 
                     // FIN Piedra, papel o tijera
@@ -126,6 +143,10 @@ public class Principal {
 
                     System.out.println("\n");
                     tablero.pintarTablero();
+                     }
+
+                   
+
 
                 }
 
@@ -140,7 +161,7 @@ public class Principal {
 
             if (menu == 4) {
 
-                System.out.println("adios");
+                System.out.println("Vuelve Pronto");
                 
 
             }
