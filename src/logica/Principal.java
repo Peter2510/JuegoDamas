@@ -7,8 +7,9 @@ import src.tablero.Tablero;
 public class Principal {
 
     Scanner ingreso = new Scanner(System.in);
-    Tablero tablero = new Tablero();
-    PiedraPapelTijera suerte = new PiedraPapelTijera();
+    private Tablero tablero = new Tablero();
+    private PiedraPapelTijera suerte = new PiedraPapelTijera();
+    private VectorUsuarios controlUsuarios = new VectorUsuarios();
 
     public static void main(String[] args) {
 
@@ -17,7 +18,7 @@ public class Principal {
         
     }
 
-    private VectorUsuarios controlUsuarios = new VectorUsuarios();
+   
 
     public Principal() {
 

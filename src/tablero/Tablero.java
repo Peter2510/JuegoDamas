@@ -7,11 +7,13 @@ public class Tablero{
     private int nColumnas =8;
     private int nFilas=8;
     private String[][] tablero = new String[nFilas][nColumnas];
-    Scanner sc = new Scanner(System.in);
     public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
     public static final String ANSI_RESET = "\u001B[0m";
     private boolean pintada;
+    Scanner sc = new Scanner(System.in);
 
+
+    
     public Tablero(){
        
     }
