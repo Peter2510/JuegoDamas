@@ -14,11 +14,8 @@ public class Principal {
     public static void main(String[] args) {
 
         Principal inicio = new Principal();
-      
-        
-    }
 
-   
+    }
 
     public Principal() {
 
@@ -32,54 +29,45 @@ public class Principal {
             System.out.println("2. Mostrar reporte de usuarios");
             System.out.println("3. Iniciar Partida");
             System.out.println("4. Salir");
-            System.out.println("\nIngresa una opcion: ");  
+            System.out.println("\nIngresa una opcion: ");
             menu = ingreso.nextInt();
 
             if (menu == 1) {
 
-                if (controlUsuarios.getContadorUsuarios()>4) {
-                    
-                    System.out.println("\nSe alcanzo el maximo de jugadores permitidos");
-                }
+                if (controlUsuarios.getContadorUsuarios() > 4) {
 
-                else {
+                    System.out.println("\nSe alcanzo el maximo de jugadores permitidos");
+                } else {
 
                     System.out.println("\n***  Registrando Usuario ***\n");
                     controlUsuarios.agregarUsuario();
-                    
-                }
 
-                
+                }
 
             }
 
             if (menu == 2) {
                 System.out.println("\n***  Reporte de usuarios   ***\n");
 
+                if (controlUsuarios.getContadorUsuarios() > 1) {
 
-                if (controlUsuarios.getContadorUsuarios()>1) {
-                    
-                    controlUsuarios.mostrarUsuariosRegistrados();    
-                }
-
-                else{
+                    controlUsuarios.mostrarUsuariosRegistrados();
+                } else {
 
                     System.out.println("No hay usuarios registrados");
-                    
 
                 }
-                
+
             }
 
             if (menu == 3) {
 
-                if (controlUsuarios.getContadorUsuarios()>1) {
+                if (controlUsuarios.getContadorUsuarios() > 1) {
 
                     System.out.println("_______________________________");
 
                     System.out.println("\nElige a los jugadores competirán\n");
-                    
-                    
+
                     controlUsuarios.mostrarUsuariosRegistrados();
 
                     System.out.println("Jugador 1");
@@ -90,80 +78,56 @@ public class Principal {
 
                     // INICIO Piedra, papel o tijera 
 
-
                     suerte.logica();
-                    suerte.getAccion();  
+                    suerte.getAccion();
                     System.out.println(suerte.getResultado());
 
-                     if(suerte.getAccion()==0){
-                    suerte.logica();
-                    System.out.println("\n");
-                    suerte.getAccion();  
-                    System.out.println(suerte.getResultado());
-                    System.out.println("\n");
-                    tablero.pintarTablero();
+                    if (suerte.getAccion() == 0) {
+                        suerte.logica();
+                        System.out.println("\n");
+                        suerte.getAccion();
+                        System.out.println(suerte.getResultado());
+                        System.out.println("\n");
+                        tablero.pintarTablero();
 
-                     }
+                    } else {
 
-                     else{
+                        if (suerte.getAccion() == 0) {
 
-                         
+                            System.out.println("\n");
+                            System.out.println("Empate, se realizara otro intento");
 
+                        }
 
-                    if (suerte.getAccion()==0) {
+                        if (suerte.getAccion() == 1) {
+
+                            System.out.println("\n");
+                            System.out.println("El jugador uno empieza la partida");
+
+                        }
+
+                        if (suerte.getAccion() == 2) {
+
+                            System.out.println("\n");
+                            System.out.println("El jugador dos empieza la partida");
+
+                        }
+
+                        // FIN Piedra, papel o tijera
 
                         System.out.println("\n");
-                        System.out.println("Empate, se realizara otro intento");
-                        
+                        tablero.pintarTablero();
                     }
 
-                      if (suerte.getAccion()==1) {
-
-                        System.out.println("\n");
-                        System.out.println("El jugador uno empieza la partida");
-                        
-                    }
-
-
-                      if (suerte.getAccion()==2) {
-
-                        System.out.println("\n");
-                        System.out.println("El jugador dos empieza la partida");
-                        
-                    }
-
-
-
-                    
-
-
-                    // FIN Piedra, papel o tijera
-
-                    
-
-
-                    System.out.println("\n");
-                    tablero.pintarTablero();
-                     }
-
-                   
-
-
-                }
-
-                else{
+                } else {
                     System.out.println("\n***  Deben de haber registrados al menos 2 jugadores  ***");
                 }
-
-                
-                
 
             }
 
             if (menu == 4) {
 
                 System.out.println("Vuelve Pronto");
-                
 
             }
 
