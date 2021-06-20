@@ -11,9 +11,6 @@ public class Tablero{
     public static final String ANSI_RESET = "\u001B[0m";
     private boolean pintada;
     Scanner sc = new Scanner(System.in);
-
-
-    
     public Tablero(){
        
     }
@@ -23,6 +20,9 @@ public class Tablero{
 
 
     public void pintarTablero(){
+
+    System.out.println(" 0   1  2  3  4  5  6  7 ");
+   
     
     for (int i=0;i<nFilas;i++ ) {
 
@@ -35,7 +35,9 @@ public class Tablero{
             //fila par y columna par es blanco
             if (filaPar==0 && columnaPar==0  ) {
 
-                tablero[i][j]=ANSI_WHITE_BACKGROUND+"▒▒▒"+ANSI_RESET;
+                
+
+                tablero[i][j]=ANSI_WHITE_BACKGROUND+"▒▒"+ANSI_RESET;
                 pintada = true;
 
                 
@@ -66,16 +68,21 @@ public class Tablero{
             }
             
         }
-        
+       
     }
 
 
 
     for (int i=0;i<nFilas ;i++ ) {
+
+
+         System.out.print(i);
         for (int j =0;j<nColumnas ;j++ ) {
 
     
+           
             System.out.print(tablero[i][j]);
+
             
         }
         System.out.println(""); 

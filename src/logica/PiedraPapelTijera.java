@@ -151,5 +151,7 @@ public class PiedraPapelTijera{
     	return accion;
     }
 
+    
+
 
 }
