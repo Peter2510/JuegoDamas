@@ -59,7 +59,7 @@ public class Tablero{
             if (filaPar!=0 && columnaPar!=0) {
 
                 tablero[i][j]=ANSI_WHITE_BACKGROUND+"▒▒▒"+ANSI_RESET;
-                pintada = true;
+                pintada = true; 
                 
             }
             
