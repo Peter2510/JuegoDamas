@@ -31,7 +31,7 @@ public class Usuarios{
         return ganadas;
     }
 
-     public int getPerdidas(){ 
+     public int getPerdidas(){
         return perdidas;
     }
 

@@ -2,12 +2,13 @@ package src.logica;
 
 import src.usuarios.VectorUsuarios;
 import java.util.Scanner;
-//import src.tablero.Tablero;
+import src.tablero.Tablero;
 
 public class Principal {
 
     Scanner ingreso = new Scanner(System.in);
-    //Tablero tablero = new Tablero();
+    Tablero tablero = new Tablero();
+    PiedraPapelTijera suerte = new PiedraPapelTijera();
 
     public static void main(String[] args) {
 
@@ -17,7 +18,6 @@ public class Principal {
     }
 
     private VectorUsuarios controlUsuarios = new VectorUsuarios();
-    private PiedraPapelTijera suerte = new PiedraPapelTijera();
 
     public Principal() {
 
@@ -36,14 +36,14 @@ public class Principal {
 
             if (menu == 1) {
 
-                if (controlUsuarios.getContadorUsuarios()>9) {
+                if (controlUsuarios.getContadorUsuarios()>4) {
                     
                     System.out.println("\nSe alcanzo el maximo de jugadores permitidos");
                 }
 
                 else {
 
-                    System.out.println("\n***  Registrando Usuario ***");
+                    System.out.println("\n***  Registrando Usuario ***\n");
                     controlUsuarios.agregarUsuario();
                     
                 }
@@ -56,7 +56,7 @@ public class Principal {
                 System.out.println("\n***  Reporte de usuarios   ***\n");
 
 
-                if (controlUsuarios.getContadorUsuarios()>0) {
+                if (controlUsuarios.getContadorUsuarios()>1) {
                     
                     controlUsuarios.mostrarUsuariosRegistrados();    
                 }
@@ -64,9 +64,8 @@ public class Principal {
                 else{
 
                     System.out.println("No hay usuarios registrados");
-                    suerte.logica();
-                    System.out.println(suerte.getResultado());
-                    System.out.println(suerte.getAccion());
+                    
+
                 }
                 
             }
@@ -87,9 +86,24 @@ public class Principal {
 
                     System.out.println("Jugador 2");
                     int opcionJugadores2 = ingreso.nextInt();
-                    
+
+                    // INICIO Piedra, papel o tijera 
+
+                    suerte.logica();
+                    suerte.getResultado();  
+                    System.out.println(suerte.getAccion());
+
+                    // INICIO Piedra, papel o tijera
+
+                    if (suerte.getAccion()==1) {
+
+                             System.out.println("Inicia el jugador 1 seleccinado");
+                        
+                    }
+
+
                     System.out.println("\n");
-                    
+                    tablero.pintarTablero();
 
                 }
 
