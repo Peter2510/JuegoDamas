@@ -64,8 +64,9 @@ public class Principal {
                 else{
 
                     System.out.println("No hay usuarios registrados");
-                    suerte.generarnumero();
-                    System.out.println(suerte.getAleatorio());
+                    suerte.logica();
+                    System.out.println(suerte.getResultado());
+                    System.out.println(suerte.getAccion());
                 }
                 
             }

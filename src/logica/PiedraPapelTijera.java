@@ -14,15 +14,7 @@ public class PiedraPapelTijera{
 	}
 
 
-	public void generarnumero1(){
-
-		numeroAleatorio1 = (int) (Math.random() * 3) + 1;
-	}
-
-		public void generarnumero2(){
-
-		numeroAleatorio2 = (int) (Math.random() * 3) + 1;
-	}
+	
 
 	public void logica(){
 
@@ -37,8 +29,19 @@ public class PiedraPapelTijera{
 
 		// Empate
 
+		numeroAleatorio1 = (int) (Math.random() * 3) + 1;
+		numeroAleatorio2 = (int) (Math.random() * 3) + 1;
+
+		System.out.println("uno "+numeroAleatorio1);
+		System.out.println("dos "+numeroAleatorio2);
+		
+
+
+
 		if (numeroAleatorio1==1 && numeroAleatorio2==1) {
 
+			System.out.println("Jugador uno: Papel");
+			System.out.println("Jugador dos: Papel");
 			resultado = "Empate";
 			accion = 0;
 
@@ -49,6 +52,9 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio1==2 && numeroAleatorio2==2) {
 
+			
+			System.out.println("Jugador uno: Tijera");
+			System.out.println("Jugador dos: Tijera");
 			resultado = "Empate";
 			accion = 0;
 
@@ -59,6 +65,9 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio1==3 && numeroAleatorio2==3) {
 
+			
+			System.out.println("Jugador uno: Piedra");
+			System.out.println("Jugador dos: Piedra");
 			resultado = "Empate";
 			accion = 0;
 
@@ -69,6 +78,9 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio1==1 && numeroAleatorio2==2) {
 
+			
+			System.out.println("Jugador uno: Papel");
+			System.out.println("Jugador dos: Tijera");
 			resultado = "Gana jugador 2";
 			accion =2;
 			
@@ -78,6 +90,8 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio1==1 && numeroAleatorio2==3) {
 
+			System.out.println("Jugador uno: Papel");
+			System.out.println("Jugador dos: Piedra");
 			resultado = "Gana jugador 1";
 			accion = 1;
 			
@@ -88,6 +102,9 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio2==1 && numeroAleatorio1==2) {
 
+			
+			System.out.println("Jugador uno: Tijera");
+			System.out.println("Jugador dos: Papel");
 			resultado = "Gana jugador 1";
 			accion =1;
 			
@@ -97,18 +114,45 @@ public class PiedraPapelTijera{
 
 		if (numeroAleatorio2==1 && numeroAleatorio1==3) {
 
+			System.out.println("Jugador uno: Papel");
+			System.out.println("Jugador dos: Piedra");
+			resultado = "Gana jugador 1";
+			accion = 1;
+			
+		}
+
+			
+
+
+		if (numeroAleatorio1==3&&numeroAleatorio2==2) {
+
+			System.out.println("Jugador uno: Piedra");
+			System.out.println("Jugador dos: Tijera");
+			resultado = "Gana jugador 1";
+			accion = 1;
+			
+		}
+
+		if (numeroAleatorio1==2 && numeroAleatorio2==3) {
+
+			System.out.println("Jugador uno: Tijera");
+			System.out.println("Jugador dos: Piedra");
 			resultado = "Gana jugador 2";
 			accion = 2;
 			
 		}
 
 
-		public int getResultador(){
-			return accion;
-		}
-		
-
 	}
+
+
+     public int getResultado(){ 
+        return accion;
+    }
+
+    public String getAccion(){
+    	return resultado;
+    }
 
 
 
