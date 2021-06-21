@@ -10,6 +10,9 @@ public class Principal {
     private Tablero tablero = new Tablero();
     private PiedraPapelTijera suerte = new PiedraPapelTijera();
     private VectorUsuarios controlUsuarios = new VectorUsuarios();
+    private int moverColumna;
+    private int moverFila;
+    int contador = 20;
 
     public static void main(String[] args) {
 
@@ -116,7 +119,24 @@ public class Principal {
                         // FIN Piedra, papel o tijera
 
                         System.out.println("\n");
+                        System.out.println("1");
                         tablero.pintarTablero();
+                        //tablero.pintarTablero();
+
+                        while(contador<=20){
+
+                            pedirJugadro1();
+
+                            pedirJugadro2();
+                            contador--;
+
+
+
+                        }
+
+                      System.out.println("2");
+
+
                     }
 
                 } else {
@@ -134,4 +154,152 @@ public class Principal {
         }
 
     }
+
+    public void pedirJugadro1(){
+         System.out.println("Jugador1: Que pieza deseas mover");
+                       int mover = ingreso.nextInt();
+                       
+                       if (mover==1) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento1(moverColumna,moverFila);
+                       }
+
+                          if (mover==2) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento2(moverColumna,moverFila);
+                       }
+
+                      if (mover==3) {
+                           System.out.println("A que fina deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento3(moverColumna,moverFila);
+                       }
+
+                         if (mover==4) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento4(moverColumna,moverFila);
+                       }
+
+                         if (mover==5) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento5(moverColumna,moverFila);
+                       }
+
+                         if (mover==6) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento6(moverColumna,moverFila);
+                       }
+
+                         if (mover==7) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento7(moverColumna,moverFila);
+                       }
+
+                         if (mover==8) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento8(moverColumna,moverFila);
+                       }
+
+
+                        tablero.pintarTablero();
+                        //tablero.pintarTablero();tablero.pintarTablero();
+
+    }
+
+     public void pedirJugadro2(){
+         System.out.println("Jugador2: Que pieza deseas mover");
+                       int mover = ingreso.nextInt();
+                       
+                       if (mover==9) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento9(moverColumna,moverFila);
+                       }
+
+                          if (mover==10) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento10(moverColumna,moverFila);
+                       }
+
+                      if (mover==11) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento11(moverColumna,moverFila);
+                       }
+
+                         if (mover==12) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento12(moverColumna,moverFila);
+                       }
+
+                         if (mover==13) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento13(moverColumna,moverFila);
+                       }
+
+                         if (mover==14) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento14(moverColumna,moverFila);
+                       }
+
+                         if (mover==15) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento15(moverColumna,moverFila);
+                       }
+
+                         if (mover==16) {
+                           System.out.println("A que fila deseas mover la pieza");
+                           moverColumna = ingreso.nextInt();
+                           System.out.println("A que columna deseas mover la pieza");
+                           moverFila = ingreso.nextInt();
+                           tablero.movimiento16(moverColumna,moverFila);
+                       }
+
+
+                        tablero.pintarTablero();
+                        //tablero.pintarTablero();tablero.pintarTablero();
+
+}
 }

@@ -8,8 +8,8 @@ public class Fichas {
     private int posIniY;
     private int posFinX;
     private int posFinY;
-    private String fichaRedonda = ANSI_RED + " O " + ANSI_RESET;
-    private String fichaX = ANSI_RED + " X " + ANSI_RESET;
+    private String fichaRedonda = ANSI_RED + "#" + ANSI_RESET;
+    private String fichaX = ANSI_RED + "*" + ANSI_RESET;
     public static final String ANSI_RED = "\u001B[31m";
 
     public Fichas(boolean redonda, int posIniX, int posIniY) {
@@ -44,6 +44,18 @@ public class Fichas {
 
     public int getPosIniY() {
         return posIniY;
+    }
+
+    public void setPosIniX(int posIniX){
+
+        this.posIniX = posIniX;
+
+    }
+
+    public void setPosIniY(int posIniY){
+
+        this.posIniY = posIniY;
+
     }
 
 }
