@@ -60,13 +60,13 @@ public class Tablero {
 
                     
                     pintada = false;
-                    tablero[i][j] = ANSI_BLUE_BACKGROUND + "▒▒▒▒" + ANSI_RESET;
+                    tablero[i][j] = "▒▒▒▒" ;
                 }
 
                 //fila par  y columnar impar
                 if (filaPar == 0 && columnaPar != 0) {
 
-                    tablero[i][j] = ANSI_BLUE_BACKGROUND + "▒▒▒▒" + ANSI_RESET;
+                    tablero[i][j] = "▒▒▒▒";
                     pintada = false;
 
                 }
@@ -86,17 +86,17 @@ public class Tablero {
 
             System.out.print(i);
             //Parte de arriba 
-            tablero[ficha1.getPosIniX()][ficha1.getPosIniY()] = ficha1.pintarFichaRedonda()+" 1"+ficha1.pintarFichaRedonda();
-            tablero[ficha2.getPosIniX()][ficha2.getPosIniY()] = ficha2.pintarFichaRedonda()+" 2"+ficha2.pintarFichaRedonda();
-            tablero[ficha3.getPosIniX()][ficha3.getPosIniY()] = ficha3.pintarFichaRedonda()+" 3"+ficha3.pintarFichaRedonda();
-            tablero[ficha4.getPosIniX()][ficha4.getPosIniY()] = ficha4.pintarFichaRedonda()+" 4"+ficha4.pintarFichaRedonda();
-            tablero[ficha5.getPosIniX()][ficha5.getPosIniY()] = ficha5.pintarFichaRedonda()+" 5"+ficha5.pintarFichaRedonda();
-            tablero[ficha6.getPosIniX()][ficha6.getPosIniY()] = ficha6.pintarFichaRedonda()+" 6"+ficha6.pintarFichaRedonda();
-            tablero[ficha7.getPosIniX()][ficha7.getPosIniY()] = ficha7.pintarFichaRedonda()+" 7"+ficha7.pintarFichaRedonda();
-            tablero[ficha8.getPosIniX()][ficha8.getPosIniY()] = ficha8.pintarFichaRedonda()+" 8"+ficha8.pintarFichaRedonda();
+            tablero[ficha1.getPosIniX()][ficha1.getPosIniY()] = ficha1.pintarFichaRedonda()+"01"+ficha1.pintarFichaRedonda();
+            tablero[ficha2.getPosIniX()][ficha2.getPosIniY()] = ficha2.pintarFichaRedonda()+"02"+ficha2.pintarFichaRedonda();
+            tablero[ficha3.getPosIniX()][ficha3.getPosIniY()] = ficha3.pintarFichaRedonda()+"03"+ficha3.pintarFichaRedonda();
+            tablero[ficha4.getPosIniX()][ficha4.getPosIniY()] = ficha4.pintarFichaRedonda()+"04"+ficha4.pintarFichaRedonda();
+            tablero[ficha5.getPosIniX()][ficha5.getPosIniY()] = ficha5.pintarFichaRedonda()+"05"+ficha5.pintarFichaRedonda();
+            tablero[ficha6.getPosIniX()][ficha6.getPosIniY()] = ficha6.pintarFichaRedonda()+"06"+ficha6.pintarFichaRedonda();
+            tablero[ficha7.getPosIniX()][ficha7.getPosIniY()] = ficha7.pintarFichaRedonda()+"07"+ficha7.pintarFichaRedonda();
+            tablero[ficha8.getPosIniX()][ficha8.getPosIniY()] = ficha8.pintarFichaRedonda()+"08"+ficha8.pintarFichaRedonda();
 
             //Parte de Abajo
-            tablero[ficha9.getPosIniX()][ficha9.getPosIniY()] = ficha9.pintarFichaX()+" 9"+ficha9.pintarFichaX();
+            tablero[ficha9.getPosIniX()][ficha9.getPosIniY()] = ficha9.pintarFichaX()+"09"+ficha9.pintarFichaX();
             tablero[ficha10.getPosIniX()][ficha10.getPosIniY()] = ficha10.pintarFichaX()+"10"+ficha10.pintarFichaX();
             tablero[ficha11.getPosIniX()][ficha11.getPosIniY()] = ficha11.pintarFichaX()+"11"+ficha11.pintarFichaX();
             tablero[ficha12.getPosIniX()][ficha12.getPosIniY()] = ficha12.pintarFichaX()+"12"+ficha12.pintarFichaX();

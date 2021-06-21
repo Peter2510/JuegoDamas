@@ -52,7 +52,7 @@ public class Principal {
             if (menu == 2) {
                 System.out.println("\n***  Reporte de usuarios   ***\n");
 
-                if (controlUsuarios.getContadorUsuarios() > 1) {
+                if (controlUsuarios.getContadorUsuarios() > 0) {
 
                     controlUsuarios.mostrarUsuariosRegistrados();
                 } else {
