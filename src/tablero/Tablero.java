@@ -38,7 +38,7 @@ public class Tablero {
 
     public void pintarTablero() {
 
-        System.out.println(" 0    1   2   3   4   5   6   7 ");
+        System.out.println("  0   1   2   3   4   5   6   7 ");
 
         for (int i = 0; i < nFilas; i++) {
 
@@ -114,11 +114,7 @@ public class Tablero {
             }
             System.out.println("");
 
-        }
-
-      
-
-    
+        }    
       
     }
 
@@ -217,7 +213,6 @@ public class Tablero {
             ficha16.setPosIniX(columna);
             ficha16.setPosIniY(fila);
         }
-
 
 
 

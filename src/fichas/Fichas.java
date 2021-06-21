@@ -9,8 +9,9 @@ public class Fichas {
     private int posFinX;
     private int posFinY;
     private String fichaRedonda = ANSI_RED + "#" + ANSI_RESET;
-    private String fichaX = ANSI_RED + "*" + ANSI_RESET;
+    private String fichaX = ANSI_GREEN + "*" + ANSI_RESET;
     public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
 
     public Fichas(boolean redonda, int posIniX, int posIniY) {
 

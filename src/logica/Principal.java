@@ -81,6 +81,8 @@ public class Principal {
 
                     // INICIO Piedra, papel o tijera 
 
+                    while(suerte.getAccion()==0){
+
                     suerte.logica();
                     suerte.getAccion();
                     System.out.println(suerte.getResultado());
@@ -116,10 +118,13 @@ public class Principal {
 
                         }
 
+                    }
+
+
                         // FIN Piedra, papel o tijera
 
                         System.out.println("\n");
-                        System.out.println("1");
+                        
                         tablero.pintarTablero();
                         //tablero.pintarTablero();
 
