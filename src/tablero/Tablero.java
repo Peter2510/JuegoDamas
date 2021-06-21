@@ -86,24 +86,24 @@ public class Tablero {
 
             System.out.print(i);
             //Parte de arriba 
-            tablero[ficha1.getPosIniX()][ficha1.getPosIniY()] = ficha1.pintarFichaRedonda()+"01"+ficha1.pintarFichaRedonda();
-            tablero[ficha2.getPosIniX()][ficha2.getPosIniY()] = ficha2.pintarFichaRedonda()+"02"+ficha2.pintarFichaRedonda();
-            tablero[ficha3.getPosIniX()][ficha3.getPosIniY()] = ficha3.pintarFichaRedonda()+"03"+ficha3.pintarFichaRedonda();
-            tablero[ficha4.getPosIniX()][ficha4.getPosIniY()] = ficha4.pintarFichaRedonda()+"04"+ficha4.pintarFichaRedonda();
-            tablero[ficha5.getPosIniX()][ficha5.getPosIniY()] = ficha5.pintarFichaRedonda()+"05"+ficha5.pintarFichaRedonda();
-            tablero[ficha6.getPosIniX()][ficha6.getPosIniY()] = ficha6.pintarFichaRedonda()+"06"+ficha6.pintarFichaRedonda();
-            tablero[ficha7.getPosIniX()][ficha7.getPosIniY()] = ficha7.pintarFichaRedonda()+"07"+ficha7.pintarFichaRedonda();
-            tablero[ficha8.getPosIniX()][ficha8.getPosIniY()] = ficha8.pintarFichaRedonda()+"08"+ficha8.pintarFichaRedonda();
+            tablero[ficha1.getPosIniX()][ficha1.getPosIniY()] = ficha1.pintarFichaNumeral()+"01"+ficha1.pintarFichaNumeral();
+            tablero[ficha2.getPosIniX()][ficha2.getPosIniY()] = ficha2.pintarFichaNumeral()+"02"+ficha2.pintarFichaNumeral();
+            tablero[ficha3.getPosIniX()][ficha3.getPosIniY()] = ficha3.pintarFichaNumeral()+"03"+ficha3.pintarFichaNumeral();
+            tablero[ficha4.getPosIniX()][ficha4.getPosIniY()] = ficha4.pintarFichaNumeral()+"04"+ficha4.pintarFichaNumeral();
+            tablero[ficha5.getPosIniX()][ficha5.getPosIniY()] = ficha5.pintarFichaNumeral()+"05"+ficha5.pintarFichaNumeral();
+            tablero[ficha6.getPosIniX()][ficha6.getPosIniY()] = ficha6.pintarFichaNumeral()+"06"+ficha6.pintarFichaNumeral();
+            tablero[ficha7.getPosIniX()][ficha7.getPosIniY()] = ficha7.pintarFichaNumeral()+"07"+ficha7.pintarFichaNumeral();
+            tablero[ficha8.getPosIniX()][ficha8.getPosIniY()] = ficha8.pintarFichaNumeral()+"08"+ficha8.pintarFichaNumeral();
 
             //Parte de Abajo
-            tablero[ficha9.getPosIniX()][ficha9.getPosIniY()] = ficha9.pintarFichaX()+"09"+ficha9.pintarFichaX();
-            tablero[ficha10.getPosIniX()][ficha10.getPosIniY()] = ficha10.pintarFichaX()+"10"+ficha10.pintarFichaX();
-            tablero[ficha11.getPosIniX()][ficha11.getPosIniY()] = ficha11.pintarFichaX()+"11"+ficha11.pintarFichaX();
-            tablero[ficha12.getPosIniX()][ficha12.getPosIniY()] = ficha12.pintarFichaX()+"12"+ficha12.pintarFichaX();
-            tablero[ficha13.getPosIniX()][ficha13.getPosIniY()] = ficha13.pintarFichaX()+"13"+ficha13.pintarFichaX();
-            tablero[ficha14.getPosIniX()][ficha14.getPosIniY()] = ficha14.pintarFichaX()+"14"+ficha14.pintarFichaX();
-            tablero[ficha15.getPosIniX()][ficha15.getPosIniY()] = ficha15.pintarFichaX()+"15"+ficha15.pintarFichaX();
-            tablero[ficha16.getPosIniX()][ficha16.getPosIniY()] = ficha16.pintarFichaX()+"16"+ficha16.pintarFichaX();
+            tablero[ficha9.getPosIniX()][ficha9.getPosIniY()] = ficha9.pintarFichaAsterisco()+"09"+ficha9.pintarFichaAsterisco();
+            tablero[ficha10.getPosIniX()][ficha10.getPosIniY()] = ficha10.pintarFichaAsterisco()+"10"+ficha10.pintarFichaAsterisco();
+            tablero[ficha11.getPosIniX()][ficha11.getPosIniY()] = ficha11.pintarFichaAsterisco()+"11"+ficha11.pintarFichaAsterisco();
+            tablero[ficha12.getPosIniX()][ficha12.getPosIniY()] = ficha12.pintarFichaAsterisco()+"12"+ficha12.pintarFichaAsterisco();
+            tablero[ficha13.getPosIniX()][ficha13.getPosIniY()] = ficha13.pintarFichaAsterisco()+"13"+ficha13.pintarFichaAsterisco();
+            tablero[ficha14.getPosIniX()][ficha14.getPosIniY()] = ficha14.pintarFichaAsterisco()+"14"+ficha14.pintarFichaAsterisco();
+            tablero[ficha15.getPosIniX()][ficha15.getPosIniY()] = ficha15.pintarFichaAsterisco()+"15"+ficha15.pintarFichaAsterisco();
+            tablero[ficha16.getPosIniX()][ficha16.getPosIniY()] = ficha16.pintarFichaAsterisco()+"16"+ficha16.pintarFichaAsterisco();
 
          
 

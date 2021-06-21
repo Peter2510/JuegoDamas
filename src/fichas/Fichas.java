@@ -3,27 +3,27 @@ package src.fichas;
 public class Fichas {
 
     public static final String ANSI_RESET = "\u001B[0m";
-    private boolean redonda = true;
+    private boolean numeral = true;
     private int posIniX;
     private int posIniY;
     private int posFinX;
     private int posFinY;
-    private String fichaRedonda = ANSI_RED + "#" + ANSI_RESET;
-    private String fichaX = ANSI_GREEN + "*" + ANSI_RESET;
+    private String fichaNumeral = ANSI_RED + "#" + ANSI_RESET;
+    private String fichaAsterisco = ANSI_GREEN + "*" + ANSI_RESET;
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_GREEN = "\u001B[32m";
 
-    public Fichas(boolean redonda, int posIniX, int posIniY) {
+    public Fichas(boolean numeral, int posIniX, int posIniY) {
 
-        this.redonda = redonda;
+        this.numeral = numeral;
         this.posIniX = posIniX;
         this.posIniY = posIniY;
 
     }
 
-    public Fichas(boolean redonda, int posIniX, int posIniY, int posFinX, int posFinY) {
+    public Fichas(boolean numeral, int posIniX, int posIniY, int posFinX, int posFinY) {
 
-        this.redonda = redonda;
+        this.numeral = numeral;
         this.posIniX = posIniX;
         this.posIniY = posIniY;
         this.posFinX = posFinX;
@@ -31,12 +31,12 @@ public class Fichas {
 
     }
 
-    public String pintarFichaRedonda() {
-        return fichaRedonda;
+    public String pintarFichaNumeral() {
+        return fichaNumeral;
     }
 
-    public String pintarFichaX() {
-        return fichaX;
+    public String pintarFichaAsterisco() {
+        return fichaAsterisco;
     }
 
     public int getPosIniX() {
